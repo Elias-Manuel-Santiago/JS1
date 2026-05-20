@@ -1,0 +1,9 @@
+.fd-field input[type="number"] {
+    -moz-appearance: textfield;
+    width: 6rem;
+}
+
+.fd-field input[type="number"]::-webkit-outer-spin-button,
+.fd-field input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

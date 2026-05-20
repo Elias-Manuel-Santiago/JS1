@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personas</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Changa+One:ital@0;1&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="page-layout">
+
+            <div class="form-card">
+
+                <header class="form-header">
+                    <h1 class="form-title">Registro de Personas</h1>
+                    <p class="form-subtitle">Completá todos los campos para registrar a la persona</p>
+                </header>
+
+                <form novalidate>
+
+                    <div class="form-columns">
+
+                        <!-- Datos personales -->
+                        <section class="form-section section-estudiante">
+                            <h2 class="section-title">Datos Personales</h2>
+
+                            <div class="form-row">
+                                <div class="input-container">
+                                    <input id="nombre" placeholder="Ej: Martín" class="input-field" type="text"
+                                        autocomplete="given-name">
+                                    <label for="nombre" class="input-label">Nombre</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="nombre"></span>
+                                </div>
+                                <div class="input-container">
+                                    <input id="apellido" placeholder="Ej: Estanga" class="input-field" type="text"
+                                        autocomplete="family-name">
+                                    <label for="apellido" class="input-label">Apellido</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="apellido"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-container">
+                                    <input id="dni" placeholder="Ej: 44123456" class="input-field" type="text"
+                                        maxlength="8" inputmode="numeric">
+                                    <label for="dni" class="input-label">Documento</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="dni"></span>
+                                </div>
+                                <div class="input-container">
+                                    <input id="cuil" placeholder="Ej: 20-44123456-9" class="input-field" type="text"
+                                        maxlength="13" inputmode="numeric">
+                                    <label for="cuil" class="input-label">CUIL</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="cuil"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-container">
+                                    <input id="edad" placeholder="Ej: 30" class="input-field" type="text">
+                                    <label for="edad" class="input-label">Edad</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="edad"></span>
+                                </div>
+                                <div class="input-container">
+                                    <input id="fecha-nacimiento" class="input-field input-date" type="date">
+                                    <label for="fecha-nacimiento" class="input-label">Fecha de nacimiento</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="fechaNacimiento"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="input-container">
+                                    <select id="sexo" class="input-field select-field">
+                                        <option value="" disabled selected>Seleccioná...</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                    </select>
+                                    <label for="sexo" class="input-label select-label">Sexo</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="sexo"></span>
+                                </div>
+                                <div class="input-container">
+                                    <select id="estado-civil" class="input-field select-field">
+                                        <option value="" disabled selected>Seleccioná...</option>
+                                        <option value="soltero">Soltero/a</option>
+                                        <option value="casado">Casado/a</option>
+                                        <option value="divorciado">Divorciado/a</option>
+                                        <option value="viudo">Viudo/a</option>
+                                        <option value="union">Unión convivencial</option>
+                                    </select>
+                                    <label for="estado-civil" class="input-label select-label">Estado civil</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="estadoCivil"></span>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <input id="nacionalidad" placeholder="Ej: Argentina" class="input-field" type="text">
+                                <label for="nacionalidad" class="input-label">Nacionalidad</label>
+                                <span class="input-highlight"></span>
+                                <span class="input-error" data-for="nacionalidad"></span>
+                            </div>
+                        </section>
+
+                        <div class="form-col-right">
+
+                            <!-- Domicilio -->
+                            <section class="form-section section-domicilio">
+                                <h2 class="section-title">Domicilio</h2>
+
+                                <div class="input-container">
+                                    <input id="direccion" placeholder="Ej: Av. Corrientes 1234, piso 3"
+                                        class="input-field" type="text" autocomplete="street-address">
+                                    <label for="direccion" class="input-label">Dirección</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="direccion"></span>
+                                </div>
+
+                                <div class="input-container">
+                                    <input id="localidad" placeholder="Ej: Buenos Aires" class="input-field"
+                                        type="text" autocomplete="address-level2">
+                                    <label for="localidad" class="input-label">Localidad</label>
+                                    <span class="input-highlight"></span>
+                                    <span class="input-error" data-for="localidad"></span>
+                                </div>
+                            </section>
+
+                            <!-- Familia -->
+                            <section class="form-section section-inscripcion">
+                                <h2 class="section-title">Familia</h2>
+
+                                <div class="form-row">
+                                    <div class="input-container">
+                                        <select id="tiene-hijos" class="input-field select-field">
+                                            <option value="" disabled selected>Seleccioná...</option>
+                                            <option value="no">No</option>
+                                            <option value="si">Sí</option>
+                                        </select>
+                                        <label for="tiene-hijos" class="input-label select-label">¿Tiene hijos?</label>
+                                        <span class="input-highlight"></span>
+                                        <span class="input-error" data-for="tieneHijos"></span>
+                                    </div>
+
+                                    <div class="input-container" id="container-cantidad-hijos" style="display: none">
+                                        <input id="cantidad-hijos" placeholder="Ej: 2" class="input-field" type="text"
+                                            inputmode="numeric" maxlength="2">
+                                        <label for="cantidad-hijos" class="input-label">¿Cuántos?</label>
+                                        <span class="input-highlight"></span>
+                                        <span class="input-error" data-for="cantidadHijos"></span>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div><!-- /form-col-right -->
+                    </div><!-- /form-columns -->
+
+                    <!-- Contacto -->
+                    <section class="form-section section-tutor">
+                        <h2 class="section-title">Contacto</h2>
+
+                        <div class="form-row">
+                            <div class="input-container">
+                                <input id="telefono" placeholder="Ej: +54 9 11 1234-5678" class="input-field"
+                                    type="tel" autocomplete="tel">
+                                <label for="telefono" class="input-label">Número de teléfono</label>
+                                <span class="input-highlight"></span>
+                                <span class="input-error" data-for="telefono"></span>
+                            </div>
+                            <div class="input-container">
+                                <input id="email" placeholder="nombre@correo.com" class="input-field" type="email"
+                                    autocomplete="email">
+                                <label for="email" class="input-label">Correo electrónico</label>
+                                <span class="input-highlight"></span>
+                                <span class="input-error" data-for="email"></span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <button type="submit" class="submit-btn"><span>Enviar Registro</span></button>
+
+                </form>
+            </div>
+
+            <!-- Panel de resultados -->
+            <aside class="results-panel">
+                <div class="header-results">
+                    <h2 class="section-title">Registros guardados</h2>
+                    <button class="vaciar-lista">Vaciar Lista</button>
+                </div>
+                <div id="results-container">
+                    <p class="results-empty">Completá el formulario para registrar a una persona</p>
+                </div>
+            </aside>
+
+        </div><!-- /page-layout -->
+    </main>
+
+    <footer>
+        <button id="scroll-top" aria-label="Volver arriba">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="18 15 12 9 6 15" />
+            </svg>
+        </button>
+        <button id="toggle-tema" aria-label="Cambiar tema">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="2" x2="12" y2="4" />
+                <line x1="12" y1="20" x2="12" y2="22" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="2" y1="12" x2="4" y2="12" />
+                <line x1="20" y1="12" x2="22" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+        </button>
+    </footer>
+
+    <script type="module" src="../scripts/script.js"></script>
+
+</body>
+
+</html>

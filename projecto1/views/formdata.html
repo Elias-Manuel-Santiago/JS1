@@ -1,0 +1,70 @@
+<div class="fd-layout">
+    <section class="fd-form-section">
+        <h2>Datos personales</h2>
+        <form id="vista-form" novalidate>
+
+            <div class="fd-field">
+                <label for="fd-nombre">Nombre</label>
+                <input type="text" id="fd-nombre" name="nombre"
+                    autocomplete="given-name" placeholder="Juan">
+                <span class="fd-error" data-for="nombre"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="fd-apellido">Apellido</label>
+                <input type="text" id="fd-apellido" name="apellido"
+                    autocomplete="family-name" placeholder="García">
+                <span class="fd-error" data-for="apellido"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="fd-dni">DNI</label>
+                <input type="text" id="fd-dni" name="dni"
+                    inputmode="numeric" maxlength="8" placeholder="30234567">
+                <span class="fd-error" data-for="dni"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="fd-cuil">CUIL</label>
+                <input type="text" id="fd-cuil" name="cuil"
+                    maxlength="13" placeholder="20-30234567-9">
+                <span class="fd-error" data-for="cuil"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="fd-estado-civil">Estado Civil</label>
+                <select id="fd-estado-civil" name="estado_civil">
+                    <option value="">Seleccioná...</option>
+                    <option value="Soltero/a">Soltero/a</option>
+                    <option value="Casado/a">Casado/a</option>
+                    <option value="Divorciado/a">Divorciado/a</option>
+                    <option value="Viudo/a">Viudo/a</option>
+                    <option value="Unión convivencial">Unión convivencial</option>
+                </select>
+                <span class="fd-error" data-for="estado_civil"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="fd-fecha">Fecha de nacimiento</label>
+                <input type="date" id="fd-fecha" name="fecha_nacimiento">
+                <span class="fd-error" data-for="fecha_nacimiento"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="fd-domicilio">Domicilio</label>
+                <input type="text" id="fd-domicilio" name="domicilio"
+                    autocomplete="street-address" placeholder="Av. Corrientes 1234, CABA">
+                <span class="fd-error" data-for="domicilio"></span>
+            </div>
+
+            <button type="submit" class="fd-submit">Guardar datos</button>
+        </form>
+    </section>
+
+    <section class="fd-preview-section">
+        <h2>Vista previa</h2>
+        <div id="fd-card" class="fd-card fd-card--empty">
+            <p class="fd-empty-msg">Completá el formulario para ver los datos</p>
+        </div>
+    </section>
+</div>

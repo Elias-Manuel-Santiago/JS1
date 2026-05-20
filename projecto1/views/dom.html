@@ -1,0 +1,72 @@
+<div class="fd-layout">
+    <section class="fd-form-section">
+        <h2>Reserva de Hotel</h2>
+        <form id="vista-form" novalidate>
+
+            <div class="fd-field">
+                <label for="dom-nombre_completo">Nombre</label>
+                <input type="text" id="dom-nombre" name="nombre" autocomplete="name"
+                    placeholder="Juan">
+                <span class="fd-error" data-for="nombre"></span>
+            </div>
+            <div class="fd-field">
+                <label for="dom-nombre_completo">Apellido</label>
+                <input type="text" id="dom-apellido" name="apellido" autocomplete="name"
+                    placeholder="García">
+                <span class="fd-error" data-for="apellido"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="dom-dni">DNI</label>
+                <input type="text" id="dom-dni" name="dni" inputmode="numeric" maxlength="12"
+                    placeholder="30234567">
+                <span class="fd-error" data-for="dni"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="dom-correo">Correo electrónico</label>
+                <input type="email" id="dom-correo" name="correo" autocomplete="email" placeholder="juan@correo.com">
+                <span class="fd-error" data-for="correo"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="dom-fecha_ingreso">Fecha de ingreso</label>
+                <input type="date" id="dom-fecha_ingreso" name="fecha_ingreso">
+                <span class="fd-error" data-for="ingreso"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="dom-fecha_salida">Fecha de salida</label>
+                <input type="date" id="dom-fecha_salida" name="fecha_salida">
+                <span class="fd-error" data-for="salida"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="dom-tipo_habitacion">Tipo de habitación</label>
+                <select id="dom-tipo_habitacion" name="tipo_habitacion">
+                    <option value="">Seleccioná...</option>
+                    <option value="Simple">Simple</option>
+                    <option value="Doble">Doble</option>
+                    <option value="Triple">Triple</option>
+                    <option value="Suite">Suite</option>
+                </select>
+                <span class="fd-error" data-for="habitacion"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="dom-huespedes">Cantidad de huéspedes</label>
+                <input type="text" inputmode="numeric" id="dom-huespedes" name="huespedes" maxlength="5" placeholder="1">
+                <span class="fd-error" data-for="huespedes"></span>
+            </div>
+
+            <button type="submit" class="fd-submit">Reservar</button>
+        </form>
+    </section>
+
+    <section class="fd-preview-section">
+        <h2>Vista previa</h2>
+        <div id="fd-card" class="fd-card fd-card--empty">
+            <p class="fd-empty-msg">Completá el formulario para ver los datos</p>
+        </div>
+    </section>
+</div>

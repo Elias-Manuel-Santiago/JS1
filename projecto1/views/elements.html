@@ -1,0 +1,78 @@
+<div class="fd-layout">
+    <section class="fd-form-section">
+        <h2>Inscripción Escolar</h2>
+        <form id="vista-form" novalidate>
+
+            <div class="fd-field">
+                <label for="el-nombre">Nombre del estudiante</label>
+                <input type="text" id="el-nombre" name="nombre_estudiante"
+                    autocomplete="given-name" placeholder="Juan">
+                <span class="fd-error" data-for="nombre_estudiante"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="el-apellido">Apellido del estudiante</label>
+                <input type="text" id="el-apellido" name="apellido_estudiante"
+                    autocomplete="family-name" placeholder="García">
+                <span class="fd-error" data-for="apellido_estudiante"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="el-fecha">Fecha de nacimiento</label>
+                <input type="date" id="el-fecha" name="fecha_nacimiento">
+                <span class="fd-error" data-for="fecha_nacimiento"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="el-curso">Curso / Año</label>
+                <select id="el-curso" name="curso">
+                    <option value="">Seleccioná...</option>
+                    <option value="1ro">1ro</option>
+                    <option value="2do">2do</option>
+                    <option value="3ro">3ro</option>
+                    <option value="4to">4to</option>
+                    <option value="5to">5to</option>
+                    <option value="6to">6to</option>
+                </select>
+                <span class="fd-error" data-for="curso"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="el-responsable">Nombre y apellido del adulto responsable</label>
+                <input type="text" id="el-responsable" name="responsable"
+                    autocomplete="name" placeholder="María García">
+                <span class="fd-error" data-for="responsable"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="el-telefono">Número de teléfono de contacto</label>
+                <input type="text" id="el-telefono" name="telefono"
+                    inputmode="tel" maxlength="15" placeholder="11 1234-5678">
+                <span class="fd-error" data-for="telefono"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="el-direccion">Dirección del estudiante</label>
+                <input type="text" id="el-direccion" name="direccion"
+                    autocomplete="street-address" placeholder="Av. Corrientes 1234, CABA">
+                <span class="fd-error" data-for="direccion"></span>
+            </div>
+
+            <div class="fd-field">
+                <label for="el-dni">DNI del estudiante</label>
+                <input type="text" id="el-dni" name="dni"
+                    inputmode="numeric" maxlength="8" placeholder="30234567">
+                <span class="fd-error" data-for="dni"></span>
+            </div>
+
+            <button type="submit" class="fd-submit">Inscribir</button>
+        </form>
+    </section>
+
+    <section class="fd-preview-section">
+        <h2>Vista previa</h2>
+        <div id="fd-card" class="fd-card fd-card--empty">
+            <p class="fd-empty-msg">Completá el formulario para ver los datos</p>
+        </div>
+    </section>
+</div>
