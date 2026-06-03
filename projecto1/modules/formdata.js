@@ -36,7 +36,7 @@ export function validateFormdata(data) {
     // Formato: XX-XXXXXXXX-X donde el prefijo puede ser 20, 23, 24, 27 o 30
     if (!data.cuil.trim()) {
         errors.cuil = 'El CUIL es requerido.';
-    } else if (!/^(20|23|24|27|30)-\d{7,8}-\d$/.test(data.cuil.trim())) {
+    } else if (!/^\d{2}-\d{7,8}-\d$|^\d{10,11}$/.test(data.cuil.trim())) {
         errors.cuil = 'Formato inválido. Ej: 20-30234567-9';
     }
 
